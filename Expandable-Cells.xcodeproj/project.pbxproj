@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9E15D36B1D5E4E530019B94C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E15D36A1D5E4E530019B94C /* AppDelegate.swift */; };
-		9E15D36D1D5E4E530019B94C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E15D36C1D5E4E530019B94C /* ViewController.swift */; };
 		9E15D3701D5E4E530019B94C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E15D36E1D5E4E530019B94C /* Main.storyboard */; };
 		9E15D3721D5E4E530019B94C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E15D3711D5E4E530019B94C /* Assets.xcassets */; };
 		9E15D3751D5E4E530019B94C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E15D3731D5E4E530019B94C /* LaunchScreen.storyboard */; };
 		9E15D3801D5E4E530019B94C /* Expandable_CellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E15D37F1D5E4E530019B94C /* Expandable_CellsTests.swift */; };
 		9E15D38B1D5E4E530019B94C /* Expandable_CellsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E15D38A1D5E4E530019B94C /* Expandable_CellsUITests.swift */; };
+		9E15D3991D5E4EBC0019B94C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E15D3981D5E4EBC0019B94C /* TableViewController.swift */; };
+		9E15D39B1D5E50810019B94C /* ExpandableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E15D39A1D5E50810019B94C /* ExpandableTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		9E15D3671D5E4E520019B94C /* Expandable-Cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expandable-Cells.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E15D36A1D5E4E530019B94C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E15D36C1D5E4E530019B94C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E15D36F1D5E4E530019B94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E15D3711D5E4E530019B94C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E15D3741D5E4E530019B94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		9E15D3861D5E4E530019B94C /* Expandable-CellsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Expandable-CellsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E15D38A1D5E4E530019B94C /* Expandable_CellsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expandable_CellsUITests.swift; sourceTree = "<group>"; };
 		9E15D38C1D5E4E530019B94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E15D3981D5E4EBC0019B94C /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
+		9E15D39A1D5E50810019B94C /* ExpandableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				9E15D36A1D5E4E530019B94C /* AppDelegate.swift */,
-				9E15D36C1D5E4E530019B94C /* ViewController.swift */,
+				9E15D3981D5E4EBC0019B94C /* TableViewController.swift */,
+				9E15D39A1D5E50810019B94C /* ExpandableTableViewCell.swift */,
 				9E15D36E1D5E4E530019B94C /* Main.storyboard */,
 				9E15D3711D5E4E530019B94C /* Assets.xcassets */,
 				9E15D3731D5E4E530019B94C /* LaunchScreen.storyboard */,
@@ -193,7 +196,6 @@
 				TargetAttributes = {
 					9E15D3661D5E4E520019B94C = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = FZFRKGPX25;
 					};
 					9E15D37A1D5E4E530019B94C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -259,8 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E15D36D1D5E4E530019B94C /* ViewController.swift in Sources */,
 				9E15D36B1D5E4E530019B94C /* AppDelegate.swift in Sources */,
+				9E15D3991D5E4EBC0019B94C /* TableViewController.swift in Sources */,
+				9E15D39B1D5E50810019B94C /* ExpandableTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Expandable-Cells/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Hiso3d.Expandable-Cells";
@@ -413,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Expandable-Cells/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Hiso3d.Expandable-Cells";
@@ -485,6 +490,7 @@
 				9E15D3911D5E4E530019B94C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E15D3921D5E4E530019B94C /* Build configuration list for PBXNativeTarget "Expandable-CellsTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +499,7 @@
 				9E15D3941D5E4E530019B94C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E15D3951D5E4E530019B94C /* Build configuration list for PBXNativeTarget "Expandable-CellsUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +508,7 @@
 				9E15D3971D5E4E530019B94C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
